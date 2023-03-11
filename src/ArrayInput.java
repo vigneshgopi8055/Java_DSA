@@ -1,5 +1,6 @@
 package src;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayInput {
@@ -11,9 +12,7 @@ public class ArrayInput {
         for (int i = 0 ; i< arr.length; i++){
             arr[i]  = sc.nextInt();
         }
-        for (int j = 0 ; j< arr.length;j++){
-            System.out.print(arr[j] + " ");
-        }
+        System.out.println(Arrays.toString(arr));
 
     }
 }
