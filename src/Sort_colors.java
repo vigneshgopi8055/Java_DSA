@@ -1,17 +1,14 @@
 package src;
-
-import java.util.Arrays;
-
-public class BubbleSort {
+//https://leetcode.com/problems/sort-colors/
+public class Sort_colors {
     public static void main(String[] args) {
-        int []arr = {2,0,2,1,1,0};
-        bubble(arr);
-        System.out.println(Arrays.toString(arr));
-
+        int []nums = {2,0,2,1,1,0};
+        System.out.println(sort(nums));
     }
-    static int bubble(int []nums ){
+
+    static void sort(int[] nums){
         for (int i = 0 ; i<nums.length;i++){
-            for (int j = 1 ; j< nums.length-i;j++){
+            for (int j=1 ; j< nums.length-i ; j++){
                 if (nums[j]<nums[j-1]){
                     int temp = nums[j];
                     nums[j] = nums[j-1];
@@ -19,6 +16,6 @@ public class BubbleSort {
                 }
             }
         }
-        return 0;
+
     }
 }
