@@ -3,7 +3,7 @@ import java.util.Arrays;
 class Three_sum {
     public static void main(String[] args) {
         int []arr = {0,1,1};
-        int []ans = four(arr);
+        int []ans = three(arr);
         System.out.println(Arrays.toString(ans));
     }
     static int[] three(int []nums){
