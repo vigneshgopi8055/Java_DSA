@@ -16,6 +16,7 @@ public class Sorting_str {
                 }
             }
         }
-        System.out.println(Arrays.toString(a));
+        String[] s2 = new String[]{Arrays.toString(a)};
+        System.out.println(s2);
     }
 }
