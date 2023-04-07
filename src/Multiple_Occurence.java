@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Multiple_Occurence {
     public static void main(String[] args) {
-        int []arr = {1,2,3,4,3,2,1};
-        Findindex(arr,2,0);
+        int []arr = {5,7,7,8,8,10};
+        Findindex(arr,8,0);
         System.out.println(list);
     }
     static ArrayList<Integer>list =new ArrayList<>();
