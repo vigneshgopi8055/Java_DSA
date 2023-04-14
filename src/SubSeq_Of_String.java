@@ -4,26 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SubSeq_Of_String {
-    static List<String> al = new ArrayList<>();
-
     public static void main(String[] args) {
         String s = "abc";
-        findsubsequences(s, ""); // Calling a function
-        System.out.println(al);
+        subseq("","abc");
     }
-    private static void findsubsequences(String s,
-                                         String ans) {
-        if (s.length() == 0) {
-            al.add(ans);
+    static void subseq(String p , String up){
+        if (up.isEmpty()){
+            System.out.println(p);
             return;
         }
-
-        // We add adding 1st character in string
-        findsubsequences(s.substring(1), ans + s.charAt(0));
-
-        // Not adding first character of the string
-        // because the concept of subsequence either
-        // character will present or not
-        findsubsequences(s.substring(1), ans);
+        char ch = up.charAt(0);
+        subseq(p+ch , up.substring(1));
+        subseq(p,up.substring(1));
     }
 }
