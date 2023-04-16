@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Merge_Sort {
     public static void main(String[] args) {
-        int []arr = {5,4,3,2,1};
+        int []arr = {5,4,3,2,1,0};
         divide(arr);
         System.out.println(Arrays.toString(divide(arr)));
     }
