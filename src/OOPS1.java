@@ -1,4 +1,7 @@
 package src;
+
+import java.util.Arrays;
+
 //CLASSES AND OBJECTS
 public class OOPS1 {
     public static void main(String[] args) {
@@ -13,6 +16,11 @@ public class OOPS1 {
         car1.printPrice();
         car2.printName();
         car1.Printcolor();
+        System.out.println(car1);
+        car1.ChangeName("bmw");
+        car1.printName();
+        car car3 = new car("benz","black",600000);
+        car3.Printcolor();
     }
     static class car{
         String name;
@@ -27,6 +35,17 @@ public class OOPS1 {
         }
         void Printcolor(){
             System.out.println(this.color);
+        }
+        void ChangeName(String newname){
+             this.name = newname;
+        }
+         car(String brand ,  String colour , int on_road){
+            this.name = brand;
+            this.color = colour;
+            this.price = on_road;
+        }
+        car(){
+
         }
     }
 }
