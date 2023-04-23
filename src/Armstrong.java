@@ -2,8 +2,6 @@ package src;
 
 //To find Armstrong Number between two given number.
 
-import java.util.Scanner;
-
 public class Armstrong {
     public static void main(String[] args) {
         int number = 153, originalNumber, remainder, result = 0;

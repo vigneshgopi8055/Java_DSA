@@ -1,7 +1,5 @@
 package src;
 
-import java.util.Arrays;
-
 //Build Array from Permutation
 public class Array_Permutation {
     public static void main(String[] args) {

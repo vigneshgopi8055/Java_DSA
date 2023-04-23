@@ -2,8 +2,6 @@ package src;
 
 import java.util.*;
 
-import static java.util.Collections.list;
-
 public class Array_list {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();

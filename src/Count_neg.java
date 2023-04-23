@@ -1,7 +1,5 @@
 package src;
 
-import java.util.Arrays;
-
 public class Count_neg {
     public static void main(String[] args) {
         int [][]arr = {{5,1,0},

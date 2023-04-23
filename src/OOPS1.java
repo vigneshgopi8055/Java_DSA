@@ -1,7 +1,5 @@
 package src;
 
-import java.util.Arrays;
-
 //CLASSES AND OBJECTS
 public class OOPS1 {
     public static void main(String[] args) {

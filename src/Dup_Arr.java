@@ -1,7 +1,6 @@
 package src;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Dup_Arr {
     public static void main(String[] args) {

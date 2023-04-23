@@ -1,8 +1,5 @@
 package src;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class SubSeq_Of_String {
     public static void main(String[] args) {
         String s = "abc";
