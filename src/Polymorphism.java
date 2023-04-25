@@ -1,6 +1,6 @@
 package src;
 
-public class Practice {
+public class Polymorphism {
     static public void main(String[] args) {
         Shapes shape = new Shapes();
         Circle circle = new Circle();
