@@ -6,8 +6,8 @@ public class Getters_Setters {
         name1.setName("harsha");
         System.out.println(name1.name);
     }
-    private static class Name{
-        String name = "vignesh";
+     static class Name{
+        private String name = "vignesh";
 
         public String Getname(){
             return name;
