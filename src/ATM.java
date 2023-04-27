@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class ATM {
     static int pin_number = 1111;
     static int balance = 100000;
-    static String pass = "hello123";
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         enterPin();
