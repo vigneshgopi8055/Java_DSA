@@ -1,10 +1,9 @@
 package src;
 
 public class Linked_List {
-    private Node head;
-    private Node tail;
-    private int size;
-
+    Node head;
+    Node tail;
+    int size;
     public Linked_List(){
         this.size = 0;
     }
@@ -17,6 +16,16 @@ public class Linked_List {
         }
         size+=1;
     }
+    public void InsertLast(int value){
+        if (tail == null){
+            InsertFirst(value);
+            return;
+        }
+        Node node = new Node(value);
+        tail.next = node;
+        tail = node;
+        size++;
+    }
     public void display(){
         Node temp = head;
         while (temp!=null){
@@ -28,23 +37,20 @@ public class Linked_List {
     public class Node{
         int value;
         Node next;
-        public Node(int value , Node node){
+        Node(int value){
             this.value = value;
+        }
+        Node(int value , Node node){
             this.next = node;
-        }
-        public Node(int value){
             this.value = value;
         }
-
     }
     public static void main(String[] args) {
         Linked_List list = new Linked_List();
-        list.InsertFirst(1);
-        list.InsertFirst(2);
-        list.InsertFirst(3);
         list.InsertFirst(4);
-        list.InsertFirst(5);
+        list.InsertFirst(4);
+        list.InsertLast(5);
+        list.InsertFirst(4);
         list.display();
-
     }
 }
